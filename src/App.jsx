@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <h1>Uday Shop</h1>
+      <h1 className="app-name">Uday Shop</h1>
       {isLoggedIn ? (
         <Dashboard personName={personName} personPassword={personPassword} />
       ) : (

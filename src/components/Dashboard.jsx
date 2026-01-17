@@ -9,8 +9,8 @@ return (
         <h2>Product List</h2>
         <div>
             {[
-                { description: "Product 1", price: 29.99, quantity: 10 },
-                { description: "Product 2", price: 49.99, quantity: 5 },
+                { description: "Product 1", price: 29.99, quantity: 10,name: "lays" },
+                { description: "Product fhgjjkjkh", price: 49.99, quantity: 5 },
                 { description: "Product 3", price: 19.99, quantity: 20 },
                 { description: "Product 4", price: 19.99, quantity: 20 },
                 { description: "Product 5", price: 19.99, quantity: 20 },
@@ -39,6 +39,7 @@ return (
             ].map((product, index) => (
                 <ProductCard
                     key={index}
+                    name={product.name}
                     description={product.description}
                     price={product.price}
                     quantity={product.quantity}
